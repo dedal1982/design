@@ -11,17 +11,17 @@ const swiper = new Swiper(".completed__swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".completed__swiper-button-prev",
-    prevEl: ".completed__swiper-button-next",
+    nextEl: ".left-swiper-button-prev",
+    prevEl: ".right-swiper-button-next",
   },
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
     375: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerView: 1.1,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 2.3,
@@ -41,3 +41,33 @@ const swiper = new Swiper(".completed__swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+const makeCodeUniversal = (
+  tabItemsQuery,
+  formItemsQuery,
+  tabClassName = "active"
+) => {
+  const tabItems = Array.from(document.querySelectorAll(tabItemsQuery));
+  const formItems = Array.from(document.querySelectorAll(formItemsQuery));
+
+  const clearActiveTabs = (element) => {
+    element.find((item) => item.classList.remove(tabClassName));
+  };
+
+  const setActiveTab = (element, index) => {
+    element[index].classList.add(tabClassName);
+  };
+
+  const chekTab = (item, index) => {
+    item.addEventListener("click", () => {
+      clearActiveTabs(tabItems);
+      clearActiveTabs(formItems);
+
+      setActiveTab(tabItems, index);
+      setActiveTab(formItems, index);
+    });
+  };
+  tabItems.forEach(chekTab);
+};
+
+makeCodeUniversal(".completed__tab", ".completed__swiper");
