@@ -20,3 +20,9 @@ const chekTab = (item, index) => {
   });
 };
 tabItems.forEach(chekTab);
+
+function loadYouTubeVideo() {
+  var youtubeVideoDiv = document.getElementById("youtubeVideo");
+  youtubeVideoDiv.innerHTML =
+    '<iframe width="100%" height="100% " src="https://www.youtube.com/embed/oLY1rss9Jx8?si=-5eVgEZEd3nRIRP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+}
