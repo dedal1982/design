@@ -1506,6 +1506,7 @@ p span {
     0px 3.211686849594116px 80.29217529296875px 0px rgba(0, 0, 0, 0.12);
   position: relative;
   top: -211px;
+  margin-bottom: -30px;
   background: linear-gradient(
       62.38deg,
       rgba(0, 0, 0, 0.5) 32.01%,
@@ -1521,6 +1522,8 @@ p span {
     max-width: 720px;
     height: 410px;
     top: -205px;
+    margin-bottom: -105px;
+    border-radius: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1528,6 +1531,7 @@ p span {
     max-width: 296px;
     height: 500px;
     top: -206px;
+    margin-bottom: -124px;
   }
 }
 
@@ -1580,7 +1584,6 @@ p span {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: -30px;
 }
 @media screen and (max-width: 1280px) {
   .delivery {
@@ -1597,9 +1600,85 @@ p span {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .delivery__top {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
 .delivery__title {
   max-width: 545px;
 }
 .delivery__subscribe {
-  max-width: 519px;
+  max-width: 512px;
+}
+
+@media screen and (max-width: 1280px) {
+  .delivery__title {
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+  .delivery__subscribe {
+    max-width: 331px;
+  }
+  .delivery__title {
+    max-width: 332px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .delivery__title {
+    max-width: 289px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .delivery__subscribe {
+    max-width: 282px;
+  }
+}
+.delivery__img-item {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .delivery__img-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+.delivery__img-box-l,
+.delivery__img-box-r {
+  height: 434px;
+  border-radius: 20px;
+  box-shadow: 16.058433532714844px 3.211686849594116px 32.11686706542969px 0px
+      #0000000a,
+    0px 0px 16.058433532714844px 0px #0000000d,
+    0px 3.211686849594116px 80.29217529296875px 0px #0000000d;
+  border-radius: 20px;
+}
+
+.delivery__img-box-l {
+  width: 440px;
+}
+.delivery__img-box-r {
+  width: 900px;
+}
+@media screen and (max-width: 1280px) {
+  .delivery__img-box-l,
+  .delivery__img-box-r {
+    width: 354px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .delivery__img-box-l,
+  .delivery__img-box-r {
+    width: 296px;
+    border-radius: 12px;
+  }
+}
+.delivery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
 }
