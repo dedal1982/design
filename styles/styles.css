@@ -2579,3 +2579,107 @@ p span {
     max-width: 296px;
   }
 }
+/*installment */
+.installment {
+}
+.installment__wrapper {
+  display: flex;
+  padding-top: 20px;
+  border-top: 1px solid #d4d4d4;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1280px) {
+  .installment__wrapper {
+    padding-top: 12px;
+  }
+}
+.installment__left {
+  max-width: 620px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.installment__item-btn {
+  display: flex;
+  gap: 10px;
+}
+.installment__button {
+  width: 291px;
+  height: 59px;
+  border-radius: 10px;
+  border: 1px solid #ff4002;
+  color: #ff4002;
+  padding: 5px 21px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1280px) {
+  .installment__button {
+    width: 296px;
+    height: 50px;
+    border-radius: 8px;
+  }
+}
+.installment__line {
+  height: 49px;
+  border: 1px solid #ff40024d;
+}
+.installment__line-black {
+  border: 1px solid #ffffff4d;
+}
+.installment__button-black {
+  background: rgba(43, 46, 53, 1);
+  border: 1px solid #2b2e35;
+  color: #ffffff;
+}
+.installment__right {
+  max-width: 670px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.installment__right-top {
+  display: flex;
+  gap: 15px;
+}
+.installment__right-icon {
+  width: 58px;
+  height: 58px;
+}
+.installment__centr {
+  display: flex;
+  justify-content: space-between;
+}
+.installment__bott {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 670px;
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.installment__bott-text {
+  display: flex;
+  flex-direction: column;
+}
+.installment__item-tags {
+  display: flex;
+  gap: 10px;
+}
+.installment__tag {
+  background: #ffffff;
+  box-shadow: 16.058433532714844px 3.211686849594116px 32.11686706542969px 0px
+      #0000000a,
+    0px 3.211686849594116px 120.29000091552734px 0px #00000008;
+  border-radius: 100px;
+  padding: 8px 18px;
+  color: #2b2e35;
+  font-size: 16px;
+  line-height: 22.4px;
+}
