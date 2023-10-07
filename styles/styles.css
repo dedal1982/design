@@ -1378,7 +1378,7 @@ p span {
 }
 @media screen and (max-width: 767px) {
   .guarantee__box-title {
-    max-width: 239px;
+    max-width: 296px;
   }
 }
 .guarantee__subscribe {
@@ -2594,6 +2594,12 @@ p span {
     padding-top: 12px;
   }
 }
+@media screen and (max-width: 767px) {
+  .installment__wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
 .installment__left {
   max-width: 620px;
   width: 100%;
@@ -2605,6 +2611,12 @@ p span {
   .installment__left {
     max-width: 345px;
     gap: 16px;
+  }
+  .installment__title {
+    font-size: 12px;
+    line-height: 15.6px;
+    max-width: 177px;
+    margin-bottom: 7px;
   }
 }
 .installment__item-btn {
@@ -2664,6 +2676,7 @@ p span {
 @media screen and (max-width: 1280px) {
   .installment__right {
     max-width: 345px;
+    gap: 23px;
   }
 }
 .installment__right-top {
@@ -2690,6 +2703,12 @@ p span {
     height: 79px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .installment__centr-img {
+    width: 75px;
+    height: 75px;
+  }
+}
 .installment__centr {
   display: flex;
   justify-content: space-between;
@@ -2705,13 +2724,29 @@ p span {
   padding: 25px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 1280px) {
+  .installment__bott {
+    padding: 16px;
+  }
+}
 .installment__bott-text {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1280px) {
+  .installment__bott-text {
+    gap: 5px;
+  }
+}
 .installment__item-tags {
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 1280px) {
+  .installment__item-tags {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 .installment__tag {
   background: #ffffff;
@@ -2723,4 +2758,12 @@ p span {
   color: #2b2e35;
   font-size: 16px;
   line-height: 22.4px;
+}
+@media screen and (max-width: 1280px) {
+  .installment__tag {
+    font-size: 12px;
+    line-height: 16.8px;
+    padding: 6px 18px;
+    height: 33px;
+  }
 }
