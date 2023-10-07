@@ -42,36 +42,6 @@ const swiper = new Swiper(".completed__swiper", {
   },
 });
 
-const makeCodeUniversal = (
-  tabItemsQuery,
-  formItemsQuery,
-  tabClassName = "active"
-) => {
-  const tabItems = Array.from(document.querySelectorAll(tabItemsQuery));
-  const formItems = Array.from(document.querySelectorAll(formItemsQuery));
-
-  const clearActiveTabs = (element) => {
-    element.find((item) => item.classList.remove(tabClassName));
-  };
-
-  const setActiveTab = (element, index) => {
-    element[index].classList.add(tabClassName);
-  };
-
-  const chekTab = (item, index) => {
-    item.addEventListener("click", () => {
-      clearActiveTabs(tabItems);
-      clearActiveTabs(formItems);
-
-      setActiveTab(tabItems, index);
-      setActiveTab(formItems, index);
-    });
-  };
-  tabItems.forEach(chekTab);
-};
-
-makeCodeUniversal(".completed__tab", ".completed__swiper");
-
 /*слайдер лицензий*/
 const swiperL = new Swiper(".license__swiper", {
   // Optional parameters
@@ -135,8 +105,8 @@ const swiper3 = new Swiper(".articles__swiper", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.5,
-      spaceBetween: 8,
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
     375: {
       slidesPerView: 1,

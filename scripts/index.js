@@ -1,25 +1,35 @@
-/*табы / секция Наши реализованные проекты*/
-const tabItems = Array.from(document.querySelectorAll(".completed__tabs-item"));
-const formItems = Array.from(document.querySelectorAll(".completed__swiper"));
+const makeCodeUniversal = (
+  tabItemsQuery,
+  formItemsQuery,
+  tabClassName = "active"
+) => {
+  const tabItems = Array.from(document.querySelectorAll(tabItemsQuery));
+  const formItems = Array.from(document.querySelectorAll(formItemsQuery));
 
-const clearActiveTabs = (element, className = "active") => {
-  element.find((item) => item.classList.remove(`${className}`));
+  const clearActiveTabs = (element) => {
+    element.find((item) => item.classList.remove(tabClassName));
+  };
+
+  const setActiveTab = (element, index) => {
+    element[index].classList.add(tabClassName);
+  };
+
+  const chekTab = (item, index) => {
+    item.addEventListener("click", () => {
+      clearActiveTabs(tabItems);
+      clearActiveTabs(formItems);
+
+      setActiveTab(tabItems, index);
+      setActiveTab(formItems, index);
+    });
+  };
+  tabItems.forEach(chekTab);
 };
+// /*табы / секция Наши реализованные проекты*/
+makeCodeUniversal(".completed__tab", ".completed__swiper");
 
-const setActiveTabs = (element, index, className = "active") => {
-  element[index].classList.add(`${className}`);
-};
-
-const chekTab = (item, index) => {
-  item.addEventListener("click", () => {
-    clearActiveTabs(tabItems);
-    clearActiveTabs(formItems);
-
-    setActiveTabs(tabItems, index);
-    setActiveTabs(formItems, index);
-  });
-};
-tabItems.forEach(chekTab);
+/*переключение табов(городов) в секции карта*/
+makeCodeUniversal(".salons__tab", ".salons__stations");
 
 function loadYouTubeVideo() {
   var youtubeVideoDiv = document.getElementById("youtubeVideo");
