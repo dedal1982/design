@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -1583,7 +1589,7 @@
                     </div>
                     <hr class="salons__stations-line" />
                   </div>
-                  <button id="myButton" class="salons__button" type="button">
+                  <button class="salons__button" type="button">
                     Узнать у менеджера
                     <ul class="design__icons">
                       <a href="#"
@@ -1605,11 +1611,11 @@
             </div>
           </div>
         </section>
-        <section class="discounts">
+        <!-- <section class="discounts">
           <div class="container">
             <div class="discounts__wrapper">
-              <div class="delivery__top">
-                <div class="guarantee__box-title delivery__title">
+              <div class="delivery__top discounts__top">
+                <div class="guarantee__box-title discounts__title">
                   <h2 class="title">
                     Получите бытовую технику
                     <span>дешевле, чем у дилеров</span>
@@ -1622,14 +1628,168 @@
                     >
                   </p>
                 </div>
-                <div class="guarantee__subscribe delivery__subscribe">
-                  <h4 class="hero__title delivery__title">
-                    Гарантируем совместимость
-                  </h4>
+                <div class="discounts__subscribe-item">
+                  <div class="guarantee__subscribe discounts__subscribe">
+                    <h4 class="hero__title delivery__title">
+                      Гарантируем совместимость
+                    </h4>
+                    <p>
+                      Техники при покупке у нас, потому что мы сами продумаем
+                      схемы установки техники в кухню
+                    </p>
+                  </div>
+                  <button
+                    class="salons__button discounts__button"
+                    type="button"
+                  >
+                    Какую технику я могу получить?
+                    <ul class="design__icons">
+                      <a href="#"
+                        ><img
+                          class="design__icon"
+                          src="./icons/Telegram.svg"
+                          alt="иконка"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          class="design__icon-top"
+                          src="./icons/Whatsapp.svg"
+                          alt="иконка"
+                      /></a>
+                    </ul>
+                  </button>
+                </div>
+              </div>
+              <div class="discounts__partners">
+                <div class="discounts__partners-top"></div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <section class="cashback">
+          <div class="container">
+            <div class="cashback__wrapper">
+              <div class="cashback__left">
+                <div class="guarantee__box-title cashback__box-title">
+                  <h2 class="title">
+                    Получите <span>от 200 до 600 тысяч</span> рублей на технику
+                    и мебель
+                  </h2>
                   <p>
-                    Техники при покупке у нас, потому что мы сами продумаем
-                    схемы установки техники в кухню
+                    За счет кэшбека 25% и сертификата на 100, 200 или 500 тысяч
+                    рублей при покупке кухни ZETTA от 400.000р
                   </p>
+                </div>
+                <div class="cashback__left-inner">
+                  <div class="cashback__left-item">
+                    <ul class="cashback__list">
+                      <li>
+                        <span class="cashback__span">Акция</span>
+                      </li>
+                      <li>
+                        <h4>Кэшбек 25%</h4>
+                      </li>
+                      <li>
+                        <p class="paragraph">
+                          При покупки кухни от 400 000 ₽, ваш кэшбек составить
+                          100 000 ₽
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <img
+                    class="cashback__left-icon"
+                    src="./icons/Плюс.svg"
+                    alt="плюс"
+                  />
+                  <div class="cashback__left-item">
+                    <ul class="cashback__list">
+                      <li>
+                        <span class="cashback__span">Сертификат</span>
+                      </li>
+                      <li>
+                        <h4>Сертификат от Zetta</h4>
+                      </li>
+                      <li>
+                        <p class="paragraph">
+                          При покупке кухни мы дарим сертификат на шкафы,
+                          гостинные, гардеробные
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button class="salons__button cashback__button" type="button">
+                  Узнать у менеджера
+                  <ul class="design__icons">
+                    <a href="#"
+                      ><img
+                        class="design__icon"
+                        src="./icons/Telegram.svg"
+                        alt="иконка"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        class="design__icon-top"
+                        src="./icons/Whatsapp.svg"
+                        alt="иконка"
+                    /></a>
+                  </ul>
+                </button>
+              </div>
+              <div class="cashback__right">
+                <div class="design__right">
+                  <div class="design__right-top cashback__right-top">
+                    <img
+                      class="design__right-img cashback__right-img"
+                      src="./icons/right.svg"
+                      alt="аватар"
+                    />
+                    <ul class="design__right-text">
+                      <li>
+                        <h4>Персональный менеджер</h4>
+                      </li>
+                      <li>
+                        <p class="paragraph">
+                          Проведет вас от выбора интерьера в салоне до монтажа
+                          мебели в вашем доме
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cashback__comment">
+                  <ul class="cashback__comment-text">
+                    <li>
+                      <p class="cashback__comment-italic">
+                        Очень вежливый менеджер помог нам определиться с выбором
+                        (без него бы не справились, очень много моделей и все
+                        нравились) и подсказал, как можно сэкономить, ещё и
+                        подарки при этом получить. Посудомоечная машинка нам
+                        досталась бесплатно!
+                      </p>
+                    </li>
+                    <li>
+                      <a href="#" class="comment-span"
+                        >Смотреть отзыв полностью</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="cashback__client">
+                  <img
+                    class="cashback__client-img"
+                    src="./images/client.png"
+                    alt="аватар"
+                  />
+                  <ul class="cashback__client-text">
+                    <li>
+                      <h5>Евгений</h5>
+                    </li>
+                    <li>
+                      <p class="paragraph">г. Москва, постоянный клиент</p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
