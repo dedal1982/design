@@ -2329,11 +2329,12 @@ p span {
   padding-top: 180px;
   padding-bottom: 180px;
   gap: 20px;
+  position: relative;
 }
 @media screen and (max-width: 1280px) {
   .cashback__wrapper {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 174px;
     gap: 10px;
   }
 }
@@ -2446,12 +2447,12 @@ p span {
   .cashback__button {
     width: 248px;
     border-radius: 8px;
-    position: relative;
-    bottom: -19px;
-    left: -24px;
+    position: absolute;
+    bottom: 99px;
+    left: 0px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 767px) {
   .cashback__button {
     position: inherit;
   }
@@ -2600,9 +2601,21 @@ p span {
   flex-direction: column;
   gap: 30px;
 }
+@media screen and (max-width: 1280px) {
+  .installment__left {
+    max-width: 345px;
+    gap: 16px;
+  }
+}
 .installment__item-btn {
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 1280px) {
+  .installment__item-btn {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 .installment__button {
   width: 291px;
@@ -2620,6 +2633,8 @@ p span {
     width: 296px;
     height: 50px;
     border-radius: 8px;
+    font-size: 12px;
+    line-height: 16.8;
   }
 }
 .installment__line {
@@ -2628,6 +2643,11 @@ p span {
 }
 .installment__line-black {
   border: 1px solid #ffffff4d;
+}
+@media screen and (max-width: 1280px) {
+  .installment__line {
+    margin: 11px;
+  }
 }
 .installment__button-black {
   background: rgba(43, 46, 53, 1);
@@ -2641,6 +2661,11 @@ p span {
   flex-direction: column;
   gap: 40px;
 }
+@media screen and (max-width: 1280px) {
+  .installment__right {
+    max-width: 345px;
+  }
+}
 .installment__right-top {
   display: flex;
   gap: 15px;
@@ -2648,6 +2673,22 @@ p span {
 .installment__right-icon {
   width: 58px;
   height: 58px;
+}
+@media screen and (max-width: 1280px) {
+  .installment__right-icon {
+    width: 42px;
+    height: 42px;
+  }
+}
+.installment__centr-img {
+  width: 160px;
+  height: 160px;
+}
+@media screen and (max-width: 1280px) {
+  .installment__centr-img {
+    width: 79px;
+    height: 79px;
+  }
 }
 .installment__centr {
   display: flex;
