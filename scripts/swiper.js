@@ -130,3 +130,48 @@ const swiper3 = new Swiper(".articles__swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+/*слайдер секкции montage*/
+const swiper4 = new Swiper(".montage__swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+  slidesPerView: 3,
+  spaceBetween: 20,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".montage-next",
+    prevEl: ".montage-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2.4,
+      spaceBetween: 13,
+    },
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1920: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
