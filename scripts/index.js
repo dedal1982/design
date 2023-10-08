@@ -31,6 +31,11 @@ makeCodeUniversal(".completed__tab", ".completed__swiper");
 /*переключение табов(городов) в секции карта*/
 makeCodeUniversal(".salons__tab", ".salons__stations");
 
+/*переключение табов(выбор кухни) в секции to-choose*/
+makeCodeUniversal(".to-choose__icon", ".to-choose__content");
+makeCodeUniversal(".to-choose__mobile-icon", ".to-choose__mobile-inner");
+makeCodeUniversal(".to-choose__mobile-icon", ".mobile-title");
+
 function loadYouTubeVideo() {
   var youtubeVideoDiv = document.getElementById("youtubeVideo");
   youtubeVideoDiv.innerHTML =
