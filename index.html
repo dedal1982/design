@@ -727,9 +727,9 @@
                     <h4>Как выбрать лучшую фурнитуру и корпус</h4>
                   </div>
                   <div class="video__card-item">
-                    <div id="youtubeVideo" class="video__card">
+                    <div id="youtubeVideoTwo" class="video__card">
                       <img
-                        onclick="loadYouTubeVideo()"
+                        onclick="loadYouTubeVideo2()"
                         class="video__image"
                         src="./images/видео.png"
                         alt="превю"
@@ -1821,7 +1821,9 @@
                 </p>
               </div>
               <div class="salons__inner">
-                <div class="salons__map-wrapper"></div>
+                <div class="salons__map-wrapper">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab6daf9587caa6440796d68a85b0229117c463ed1ed4c35fa35cfe0b95a2183f7&amp;source=constructor" width="640" height="650"  frameborder="0"></iframe>
+                </div>
                 <div class="salons__item-wrapper">
                   <ul class="salons__item-tabs">
                     <li>
@@ -2409,8 +2411,8 @@
             </div>
           </div>
         </section>
-        <section class="montage">
-          <div class="montage__inner-cintainer">
+        <section class="montage__container">
+          <div class="container">
             <div class="montage__inner">
               <div class="montage__top">
                 <div class="guarantee__box-title montage__box-title">
@@ -2445,43 +2447,10 @@
               </div>
             </div>
           </div>
+        </section>
+        <section class="montage">
           <div class="container">
             <div class="montage__wrapper">
-              <div class="montage__inner-cintainer">
-                <div class="montage__inner">
-                  <div class="montage__top">
-                    <div class="guarantee__box-title montage__box-title">
-                      <h2 class="title montage__title">
-                        В конце монтажа <span>уберём за собой</span> весь мусор
-                      </h2>
-                    </div>
-                    <div class="montage__comment">
-                      <p class="cashback__comment-italic montage__comment-italic">
-                        У нас низкие потолки и небольшая площадь. Хотелось, чтобы пространство благодаря мебели выглядело визуально больше.<br>
-  Переживали, что результат может быть не таким, как на макете, но зря. Всë получилось даже лучше, чем себе представляли и ожидали.
-                      </p>
-                      <div class="cashback__client">
-                        <img
-                          class="cashback__client-img"
-                          src="./images/client.png"
-                          alt="аватар"
-                        />
-                        <ul class="cashback__client-text">
-                          <li>
-                            <h5>Евгений</h5>
-                          </li>
-                          <li>
-                            <p class="paragraph">г. Москва, постоянный клиент</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="montage__slide">
-
-                  </div>
-                </div>
-              </div>
               <div class="montage__slide-wrapp">
                 <div class="swiper-top">
                   <div class="completed__text">
@@ -2707,6 +2676,7 @@
             </div>
           </div>
         </section>
+
       </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

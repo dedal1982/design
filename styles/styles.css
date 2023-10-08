@@ -620,14 +620,14 @@ p span {
 }
 .left-swiper-button-prev,
 .right-swiper-button-next {
-  width: 40px;
-  height: 40px;
+  width: 40px !important;
+  height: 40px !important;
 }
 .left-swiper-button-prev {
-  background-image: url(../icons/лево.svg);
+  background-image: url(../icons/лево.svg) !important;
 }
 .right-swiper-button-next {
-  background-image: url(../icons/право.svg);
+  background-image: url(../icons/право.svg) !important;
 }
 /*completed__swiper*/
 .completed__swiper {
@@ -650,9 +650,9 @@ p span {
   }
 }
 .swiper-button-box {
-  display: flex;
-  gap: 10px;
-  align-self: end;
+  display: flex !important;
+  gap: 10px !important;
+  align-self: end !important;
 }
 @media screen and (max-width: 1280px) {
   .swiper-button-box {
@@ -661,14 +661,15 @@ p span {
 }
 .left-swiper-button-prev,
 .right-swiper-button-next {
-  width: 40px;
-  height: 40px;
+  width: 40px !important;
+  height: 40px !important;
 }
+
 .left-swiper-button-prev {
-  background-image: url(../icons/лево.svg);
+  background-image: url(../icons/лево.svg) !important;
 }
 .right-swiper-button-next {
-  background-image: url(../icons/право.svg);
+  background-image: url(../icons/право.svg) !important;
 }
 .swiper-top {
   width: 100%;
@@ -2736,16 +2737,19 @@ p span {
   padding-top: 20px;
   border-top: 1px solid #d4d4d4;
   justify-content: space-between;
+  padding-bottom: 555px;
 }
 @media screen and (max-width: 1280px) {
   .installment__wrapper {
     padding-top: 12px;
+    padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 767px) {
   .installment__wrapper {
     flex-direction: column;
     gap: 24px;
+    padding-bottom: 80px;
   }
   .installment__box-title {
     max-width: 500px;
@@ -2828,6 +2832,11 @@ p span {
   .installment__right {
     max-width: 345px;
     gap: 23px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .installment__right {
+    gap: 26px;
   }
 }
 .installment__right-top {
@@ -2954,11 +2963,13 @@ p span {
   border-top: 1px solid #d4d4d4;
   gap: 40px;
   position: relative;
+  top: -375px;
 }
 @media screen and (max-width: 1280px) {
   .montage__inner {
     flex-direction: row;
     padding-top: 12px;
+    top: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3035,18 +3046,14 @@ p span {
 .montage__slide-wrapp {
   display: flex;
   flex-direction: column;
-  margin-top: 180px;
+  margin-top: -196px;
 }
 @media screen and (max-width: 1280px) {
   .montage__slide-wrapp {
-    margin-top: 97px;
+    margin-top: -4px;
   }
 }
-@media screen and (max-width: 767px) {
-  .montage__slide-wrapp {
-    margin-top: 79px;
-  }
-}
+
 .montage__swiper {
   width: 1360px;
 }
@@ -3683,3 +3690,8 @@ p span {
 .mobile-title {
   padding-left: 10px;
 }
+/*montage__container*/
+.montage__container {
+  background: linear-gradient(180deg, #f2f2f2 72.24%, #ffffff 100%);
+}
+/*************************************/
