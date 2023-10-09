@@ -1083,6 +1083,11 @@ p span {
     gap: 13px;
   }
 }
+@media screen and (max-width: 767px) {
+  .facades__top {
+    max-width: 296px;
+  }
+}
 .facades__text {
   max-width: 497px;
   width: 100%;
@@ -1107,6 +1112,7 @@ p span {
     top: 8px;
     right: 0;
     margin-bottom: 22px;
+    max-width: 296px;
   }
 }
 .facades__img-l {
@@ -1174,13 +1180,10 @@ p span {
 }
 @media screen and (max-width: 767px) {
   .facades__wrapper {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "toptext"
-      "dowbtext"
-      "img-l"
-      "img-r";
-    row-gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
   }
 }
 /*components__wrapper*/
@@ -1204,7 +1207,11 @@ p span {
   display: flex;
   flex-direction: column;
 }
-
+@media screen and (max-width: 767px) {
+  .components__inner {
+    align-items: center;
+  }
+}
 .components__top {
   max-width: 1070px;
   width: 100%;
@@ -1222,6 +1229,7 @@ p span {
     gap: 23px;
     flex-direction: column;
     margin-bottom: 24px;
+    max-width: 296px;
   }
 }
 .components__title {
@@ -1778,6 +1786,11 @@ p span {
     gap: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .license__top {
+    align-items: center;
+  }
+}
 .license__item {
   max-width: 670px;
   width: 100%;
@@ -1843,6 +1856,9 @@ p span {
   .license__top {
     gap: 26px;
   }
+  .license__box-title {
+    max-width: 296px;
+  }
 }
 .license__inner {
   display: flex;
@@ -1867,6 +1883,7 @@ p span {
   .license__inner {
     padding: 23px;
     gap: 20px;
+    align-items: center;
   }
 }
 
@@ -1889,6 +1906,9 @@ p span {
 @media screen and (max-width: 767px) {
   .license__swiper {
     padding-bottom: 16px;
+    max-width: 296px;
+  }
+  .license__inner-top {
     max-width: 296px;
   }
 }
@@ -2777,7 +2797,7 @@ p span {
     padding-bottom: 80px;
   }
   .installment__box-title {
-    max-width: 500px;
+    max-width: 296px;
   }
 }
 .installment__left {
@@ -2799,6 +2819,11 @@ p span {
     margin-bottom: 7px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .installment__left {
+    align-items: center;
+  }
+}
 .installment__item-btn {
   display: flex;
   gap: 10px;
@@ -2809,6 +2834,7 @@ p span {
     gap: 5px;
   }
 }
+
 .installment__button {
   width: 291px;
   height: 59px;
