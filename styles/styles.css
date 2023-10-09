@@ -1076,8 +1076,17 @@ p span {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
-  cursor: pointer;
+  border-radius: inherit;
+}
+.video__card::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: inherit;
 }
 .video__icon {
   width: 93px;
@@ -1087,7 +1096,6 @@ p span {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  opacity: 1;
 }
 
 .video__icon:hover {
