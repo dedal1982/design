@@ -636,18 +636,21 @@ p span {
     height: 1px !important;
   }
 }
-.left-swiper-button-prev,
-.right-swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   width: 40px !important;
   height: 40px !important;
+  color: #2b2e35 !important;
+  --swiper-navigation-size: 10px !important;
 }
-.left-swiper-button-prev {
-  background-image: url(../icons/лево.svg) !important;
+.swiper-button-prev {
+  left: var(--swiper-navigation-sides-offset, -88px) !important;
+  top: var(--swiper-navigation-top-offset, -35px) !important;
 }
-.right-swiper-button-next {
-  background-image: url(../icons/право.svg) !important;
+.swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, -37px) !important;
+  top: var(--swiper-navigation-top-offset, -35px) !important;
 }
-
 /*completed__swiper*/
 .completed__swiper {
   max-width: 1360px;
@@ -672,6 +675,7 @@ p span {
   display: flex !important;
   gap: 10px !important;
   align-self: end !important;
+  position: relative;
 }
 @media screen and (max-width: 1280px) {
   .swiper-button-box {
@@ -684,10 +688,10 @@ p span {
   height: 40px !important;
 }
 
-.left-swiper-button-prev {
+.swiper-button-prev {
   background-image: url(../icons/лево.svg) !important;
 }
-.right-swiper-button-next {
+.swiper-button-next {
   background-image: url(../icons/право.svg) !important;
 }
 .swiper-top {
