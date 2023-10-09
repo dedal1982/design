@@ -469,6 +469,7 @@ p span {
 @media screen and (max-width: 1280px) {
   .completed__text {
     gap: 32px;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 767px) {
@@ -656,7 +657,7 @@ p span {
 }
 @media screen and (max-width: 1280px) {
   .swiper-button-box {
-    display: none;
+    display: none !important;
   }
 }
 .left-swiper-button-prev,
@@ -1851,7 +1852,7 @@ p span {
     border-radius: 10px;
     overflow: hidden;
     padding: 24px;
-    gap: 24px;
+    gap: 7px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1941,7 +1942,7 @@ p span {
 }
 @media screen and (max-width: 1280px) {
   .articles__inner {
-    gap: 27px;
+    gap: 21px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2056,7 +2057,21 @@ p span {
     align-items: center;
   }
 }
-
+.salons__map-iframe {
+  width: 640px;
+  height: 650px;
+}
+@media screen and (max-width: 1280px) {
+  .salons__map-iframe {
+    width: 720px;
+    height: 320px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .salons__map-iframe {
+    width: 296px;
+  }
+}
 .salons__box-title {
   max-width: 720px;
   text-align: center;
@@ -3752,4 +3767,10 @@ p span {
   height: 20px;
   z-index: 10;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1280px) {
+  .change::after {
+    width: 40px;
+    height: 40px;
+  }
 }
