@@ -100,6 +100,7 @@
               <div class="swiper-top">
                 <div class="completed__text">
                   <h2 class="title">Наши реализованные проекты</h2>
+                  <!--табы переключения слайдеров-->
                   <ul class="completed__tab-item">
                     <li>
                       <button class="completed__tab active">Все кухни</button>
@@ -115,21 +116,30 @@
                     </li>
                   </ul>
                 </div>
+                <!--контейнер с кнопками слайдеров-->
                 <div class="swiper-button-box">
                   <div class="left-swiper-button-prev"></div>
                   <div class="right-swiper-button-next"></div>
                 </div>
               </div>
-
+              <!--активный слайдер-->
               <div class="swiper completed__swiper active">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
+                    <!--картинка с лейблом хит-->
                     <div class="completed__card">
                       <div class="completed__card-img">
+                        <!--image-->
                         <img
                           class="completed__image"
                           src="./images/Rectangle1.png"
                           alt="фото"
+                        />
+                        <!--label-->
+                        <img
+                          class="completed__icon"
+                          src="./icons/hit.png"
+                          alt="хит"
                         />
                       </div>
                       <div class="completed__card-item">
@@ -239,7 +249,7 @@
 
                 <div class="swiper-scrollbar completed__swiper-scrollbar"></div>
               </div>
-
+              <!--неактивный слайдер-->
               <div class="swiper completed__swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -358,7 +368,7 @@
 
                 <div class="swiper-scrollbar completed__swiper-scrollbar"></div>
               </div>
-
+              <!--неактивный слайдер-->
               <div class="swiper completed__swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -477,7 +487,7 @@
 
                 <div class="swiper-scrollbar completed__swiper-scrollbar"></div>
               </div>
-
+              <!--неактивный слайдер-->
               <div class="swiper completed__swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -730,23 +740,42 @@
                 <h2>Полезные видео-ролики</h2>
                 <div class="video__item">
                   <div class="video__card-item">
-                    <div id="youtubeVideo" class="video__card">
+                    <div
+                      id="youtubeVideo"
+                      onclick="loadYouTubeVideo()"
+                      class="video__card"
+                    >
                       <img
                         onclick="loadYouTubeVideo()"
                         class="video__image"
                         src="./images/видео.png"
                         alt="превю"
                       />
+                      <img
+                        class="video__icon"
+                        src="./icons/Youtube.svg"
+                        alt="кнопка"
+                      />
                     </div>
                     <h4>Как выбрать лучшую фурнитуру и корпус</h4>
                   </div>
                   <div class="video__card-item">
-                    <div id="youtubeVideoTwo" class="video__card">
+                    <div
+                      id="youtubeVideoTwo"
+                      onclick="loadYouTubeVideo2()"
+                      class="video__card"
+                    >
                       <img
                         onclick="loadYouTubeVideo2()"
                         class="video__image"
                         src="./images/видео.png"
                         alt="превю"
+                      />
+
+                      <img
+                        class="video__icon"
+                        src="./icons/Youtube.svg"
+                        alt="кнопка"
                       />
                     </div>
                     <h4>Как выбрать лучшую фурнитуру и корпус</h4>
