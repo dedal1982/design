@@ -717,6 +717,7 @@ p span {
   .design__top {
     flex-direction: column;
     gap: 22px;
+    align-items: center;
   }
 }
 .design__left {
@@ -734,6 +735,7 @@ p span {
 @media screen and (max-width: 767px) {
   .design__left {
     gap: 9px;
+    max-width: 296px;
   }
 }
 .design__right {
@@ -746,6 +748,11 @@ p span {
 @media screen and (max-width: 1280px) {
   .design__right {
     max-width: 345px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .design__right {
+    align-items: center;
   }
 }
 .design__right-top {
@@ -2065,6 +2072,7 @@ p span {
   .salons__map-iframe {
     width: 720px;
     height: 320px;
+    border-radius: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2324,6 +2332,7 @@ p span {
     padding-top: 40px;
     padding-bottom: 40px;
     gap: 22px;
+    align-items: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2963,6 +2972,7 @@ p span {
 @media screen and (max-width: 767px) {
   .montage__wrapper {
     padding-top: 80px;
+    align-items: center;
   }
 }
 .ontage__inner-cintainer {
@@ -3083,6 +3093,9 @@ p span {
     width: 296px;
     padding-bottom: 30px;
   }
+  .montage__text {
+    max-width: 296px;
+  }
 }
 .montage__card {
   display: flex;
@@ -3151,6 +3164,7 @@ p span {
   .montage__salon {
     margin-top: 80px;
     flex-direction: column;
+    align-items: center;
   }
 }
 .montage__salon-top {
@@ -3173,6 +3187,11 @@ p span {
     position: inherit;
   }
 }
+@media screen and (max-width: 767px) {
+  .montage__salon-top {
+    align-items: center;
+  }
+}
 .montage__salon-title {
   max-width: 720px;
 }
@@ -3186,6 +3205,15 @@ p span {
   .montage__salon-img {
     max-width: 348px;
     flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 767px) {
+  .montage__salon-img {
+    gap: 20px;
+    max-width: 290px;
+  }
+  .montage__salon-title {
+    max-width: 296px;
   }
 }
 .montage__img-l {
@@ -3587,7 +3615,11 @@ p span {
     gap: 12px;
   }
 }
-
+@media screen and (max-width: 767px) {
+  .to-choose__mobile-wrapper {
+    align-items: center;
+  }
+}
 @media screen and (max-width: 1280px) {
   .to-choose__mobile {
     position: relative;
