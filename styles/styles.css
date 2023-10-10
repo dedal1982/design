@@ -688,12 +688,13 @@ p span {
   height: 40px !important;
 }
 
-.swiper-button-prev {
-  background-image: url(../icons/лево.svg) !important;
-}
+.swiper-button-prev,
 .swiper-button-next {
-  background-image: url(../icons/право.svg) !important;
+  border: 1px solid #2b2e35;
+  border-radius: 8px !important;
+  color: #2b2e35;
 }
+
 .swiper-top {
   width: 100%;
   display: flex;
@@ -3887,5 +3888,18 @@ iframe {
   .change::after {
     width: 40px;
     height: 40px;
+    top: 40%;
+  }
+  .change::before {
+    content: url(../icons/to-do-m.svg);
+    top: 40%;
+    width: 6.33px;
+    height: 16.67px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .change::after,
+  .change::before {
+    top: 50%;
   }
 }

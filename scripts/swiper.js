@@ -1,4 +1,4 @@
-const swiper = new Swiper(".completed__swiper", {
+const swiper1 = new Swiper(".completed__swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: false,
@@ -28,7 +28,7 @@ const swiper = new Swiper(".completed__swiper", {
       spaceBetween: 8,
     },
     1280: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
     1920: {
@@ -43,7 +43,7 @@ const swiper = new Swiper(".completed__swiper", {
 });
 
 /*слайдер лицензий*/
-const swiperL = new Swiper(".license__swiper", {
+const swiper2 = new Swiper(".license__swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: false,
@@ -72,7 +72,7 @@ const swiperL = new Swiper(".license__swiper", {
       spaceBetween: 20,
     },
     1280: {
-      slidesPerView: 2,
+      slidesPerView: 5,
       spaceBetween: 20,
     },
     1920: {
@@ -87,7 +87,7 @@ const swiperL = new Swiper(".license__swiper", {
 });
 
 /*слайдер секкции артикл*/
-const swiper3 = new Swiper(".articles__swiper", {
+const swiper33 = new Swiper(".articles__swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: false,
@@ -117,7 +117,7 @@ const swiper3 = new Swiper(".articles__swiper", {
       spaceBetween: 10,
     },
     1280: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
     1920: {
@@ -132,7 +132,7 @@ const swiper3 = new Swiper(".articles__swiper", {
 });
 
 /*слайдер секкции montage*/
-const swiper4 = new Swiper(".montage__swiper", {
+const swiper3 = new Swiper(".montage__swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: false,
@@ -162,7 +162,7 @@ const swiper4 = new Swiper(".montage__swiper", {
       spaceBetween: 13,
     },
     1280: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
     1920: {
