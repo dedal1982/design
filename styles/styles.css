@@ -1202,6 +1202,12 @@ iframe {
     height: 276px;
   }
 }
+@media screen and (max-width: 767px) {
+  .facades__img-l {
+    width: 296px;
+    margin: 0 auto;
+  }
+}
 .facades__img-r {
   max-width: 530px;
   height: 339px;
@@ -1235,9 +1241,8 @@ iframe {
   }
 }
 @media screen and (max-width: 767px) {
-  .facades__img-l,
   .facades__img-r {
-    max-width: 296px;
+    width: 296px;
     margin: 0 auto;
   }
 }
@@ -2498,6 +2503,11 @@ iframe {
     gap: 26px;
   }
 }
+@media screen and (max-width: 767px) {
+  .discounts__top {
+    gap: 30px;
+  }
+}
 .discounts__partners {
   max-width: 1360px;
   width: 100%;
@@ -3743,6 +3753,7 @@ iframe {
 @media screen and (max-width: 767px) {
   .to-choose__mobile-wrapper {
     align-items: center;
+    gap: 9px;
   }
 }
 @media screen and (max-width: 1280px) {
