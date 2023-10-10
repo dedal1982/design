@@ -3751,12 +3751,16 @@ iframe {
     display: flex;
     max-width: 720px;
     width: 100%;
-    background: #f3f3f3;
+    background: transparent;
     border-radius: 10px;
     display: flex;
     padding: 24px;
     box-sizing: border-box;
     min-height: 72px;
+    border: 1px solid #d4d4d4;
+  }
+  .to-choose__mobile.active {
+    background: #f3f3f3;
   }
 }
 

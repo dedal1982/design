@@ -33,8 +33,10 @@ makeCodeUniversal(".salons__tab", ".salons__stations");
 
 /*переключение табов(выбор кухни) в секции to-choose*/
 makeCodeUniversal(".to-choose__icon", ".to-choose__content");
+makeCodeUniversal(".to-choose__icon", ".to-choose__tab");
 makeCodeUniversal(".to-choose__mobile-icon", ".to-choose__mobile-inner");
 makeCodeUniversal(".to-choose__mobile-icon", ".mobile-title");
+makeCodeUniversal(".to-choose__mobile-icon", ".to-choose__mobile");
 
 function loadYouTubeVideo() {
   var youtubeVideoDiv = document.getElementById("youtubeVideo");
