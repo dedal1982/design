@@ -43,12 +43,14 @@ makeCodeUniversal(".to-choose__mobile-icon", ".to-choose__mobile");
 function loadYouTubeVideo() {
   var youtubeVideoDiv = document.getElementById("youtubeVideo");
   youtubeVideoDiv.innerHTML =
+    //фрейм ютюб-видео(сюда вставить iframe нужного ролика)
     '<iframe src="https://www.youtube.com/embed/oLY1rss9Jx8?si=-5eVgEZEd3nRIRP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 }
 //фуекция загрузки видеоролика только при клике на кнопку
 function loadYouTubeVideo2() {
   var youtubeVideoDiv = document.getElementById("youtubeVideoTwo");
   youtubeVideoDiv.innerHTML =
+    //фрейм ютюб-видео(сюда вставить iframe нужного ролика)
     '<iframe src="https://www.youtube.com/embed/oLY1rss9Jx8?si=-5eVgEZEd3nRIRP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 }
 /*слайдер до и после*/
