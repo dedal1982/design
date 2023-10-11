@@ -384,6 +384,7 @@ p span {
   color: #ffffff;
   font-size: 16px;
   line-height: 21.86px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1280px) {
   .hero__button {
@@ -636,12 +637,15 @@ p span {
     height: 1px !important;
   }
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   width: 40px !important;
   height: 40px !important;
-  color: #2b2e35 !important;
   --swiper-navigation-size: 10px !important;
+  border: 1px solid #2b2e35;
+  border-radius: 8px !important;
+  color: #2b2e35;
 }
 .swiper-button-prev {
   left: var(--swiper-navigation-sides-offset, -88px) !important;
@@ -681,13 +685,6 @@ p span {
   .swiper-button-box {
     display: none !important;
   }
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  border: 1px solid #2b2e35;
-  border-radius: 8px !important;
-  color: #2b2e35;
 }
 
 .swiper-top {
