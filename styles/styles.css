@@ -654,7 +654,7 @@ p span {
 /*completed__swiper*/
 .completed__swiper {
   max-width: 1360px;
-  width: 100%;
+  /* width: 100%; */
   position: relative;
   display: none !important;
 }
@@ -681,11 +681,6 @@ p span {
   .swiper-button-box {
     display: none !important;
   }
-}
-.left-swiper-button-prev,
-.right-swiper-button-next {
-  width: 40px !important;
-  height: 40px !important;
 }
 
 .swiper-button-prev,
