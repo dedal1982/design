@@ -1,3 +1,4 @@
+//функция переключения табов
 const makeCodeUniversal = (
   tabItemsQuery,
   formItemsQuery,
@@ -38,11 +39,13 @@ makeCodeUniversal(".to-choose__mobile-icon", ".to-choose__mobile-inner");
 makeCodeUniversal(".to-choose__mobile-icon", ".mobile-title");
 makeCodeUniversal(".to-choose__mobile-icon", ".to-choose__mobile");
 
+//фуекция загрузки видеоролика только при клике на кнопку
 function loadYouTubeVideo() {
   var youtubeVideoDiv = document.getElementById("youtubeVideo");
   youtubeVideoDiv.innerHTML =
     '<iframe src="https://www.youtube.com/embed/oLY1rss9Jx8?si=-5eVgEZEd3nRIRP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 }
+//фуекция загрузки видеоролика только при клике на кнопку
 function loadYouTubeVideo2() {
   var youtubeVideoDiv = document.getElementById("youtubeVideoTwo");
   youtubeVideoDiv.innerHTML =
