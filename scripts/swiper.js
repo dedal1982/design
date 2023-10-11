@@ -11,8 +11,8 @@ const swiper1 = new Swiper(".completed__swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".completed-next",
-    prevEl: ".completed-prev",
+    nextEl: ".completed-prev",
+    prevEl: ".completed-next",
   },
   breakpoints: {
     320: {
