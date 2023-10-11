@@ -3395,6 +3395,16 @@ iframe {
     max-width: 296px;
   }
 }
+@media screen and (max-width: 500px) {
+  .montage__salon-img {
+    position: relative;
+    bottom: 90px;
+  }
+  .montage__button {
+    position: relative;
+    top: 162px;
+  }
+}
 .montage__img-l {
   width: 670px;
   height: 310px;
@@ -3458,7 +3468,7 @@ iframe {
 }
 @media screen and (max-width: 767px) {
   .montage__form {
-    padding-top: 72px;
+    padding-top: 77px;
     padding-bottom: 80px;
   }
 }
